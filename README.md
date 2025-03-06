@@ -66,8 +66,8 @@
 
 ---
 
-![Languages](https://github-readme-stats.vercel.app/api/top-langs?username=cristianpvp&show_icons=true&locale=en&layout=compact)
-
 ![Stats](https://github-readme-stats.vercel.app/api?username=cristianpvp&show_icons=true&locale=en)
+
+![Languages](https://github-readme-stats.vercel.app/api/top-langs?username=cristianpvp&show_icons=true&locale=en&layout=compact)
 
 ![StreakStats](https://github-readme-streak-stats.herokuapp.com/?user=CrIsTiAnPvP)
