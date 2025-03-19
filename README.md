@@ -13,6 +13,7 @@
 |-|-|-|-|
 | ConfigRed    | [ConfigRed](https://github.com/CrIsTiAnPvP/ConfigRed) | ![GitHub Repo stars](https://img.shields.io/github/stars/CrIsTiAnPvP/ConfigRed?style=flat-square&logo=githubsponsors) | ![GitHub last commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/ConfigRed?display_timestamp=committer&style=flat-square&logo=git) |
 | ODS-13_WebPage | [ODS-13_WebPage](https://github.com/CrIsTiAnPvP/ODS-13_WebPage) | ![GitHub Repo stars](https://img.shields.io/github/stars/CrIsTiAnPvP/ODS-13_WebPage?style=flat-square&logo=githubsponsors) | ![GitHub last commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/ODS-13_WebPage?display_timestamp=committer&style=flat-square&logo=git) |
+| Custom-Mobs | [Custom-Mobs](https://github.com/CrIsTiAnPvP/CustomMobs) | ![GitHub Repo stars](https://img.shields.io/github/stars/CrIsTiAnPvP/CustomMobs?style=flat-square&logo=githubsponsors) | ![GitHub last commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/CustomMobs?display_timestamp=committer&style=flat-square&logo=git) |
 
 ---
 
