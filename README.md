@@ -68,8 +68,8 @@
 
 ---
 
-![Stats](https://github-readme-stats.vercel.app/api?username=cristianpvp&show_icons=true&locale=en)
+![Stats](https://github-readme-stats.vercel.app/api?username=cristianpvp&show_icons=true&locale=en&theme=github_dark_dimmed)
 
-![Languages](https://github-readme-stats.vercel.app/api/top-langs?username=cristianpvp&show_icons=true&locale=en&layout=compact)
+![Languages](https://github-readme-stats.vercel.app/api/top-langs?username=cristianpvp&show_icons=true&locale=en&layout=compact&theme=github_dark_dimmed)
 
-![StreakStats](https://github-readme-streak-stats.herokuapp.com/?user=CrIsTiAnPvP)
+![StreakStats](https://github-readme-streak-stats.herokuapp.com/?user=CrIsTiAnPvP&date_format=j%20M%5B%20Y%5D&&date_format=j%20M%5B%20Y%5D)
