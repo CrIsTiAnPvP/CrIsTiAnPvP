@@ -20,7 +20,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          PACKAGES=$(gh api users/CrIsTiAnPvP/packages?package_type=container&visibility=public)
+          PACKAGES=$(gh api users/CrIsTiAnPvP/packages -f package_type=container)
           
           echo "| Image Name | Repository | Last Updated |" >> table.md
           echo "| :--- | :--- | :--- |" >> table.md
