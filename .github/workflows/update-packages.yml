@@ -1,0 +1,40 @@
+name: Update GHCR Packages
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: read
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Packages from GHCR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PACKAGES=$(gh api /users/${{ github.repository_owner }}/packages?package_type=container)
+          
+          echo "| Image Name | Repository | Last Updated |" >> table.md
+          echo "| :--- | :--- | :--- |" >> table.md
+          echo "$PACKAGES" | jq -r '.[] | "| \(.name) | [\(.repository.name)](\(.repository.html_url)) | \(.updated_at | split("T")[0]) |"' >> table.md
+
+      - name: Insert table into README
+        run: |
+          sed -i '/:pkg:START/,/:pkg:END/{ /:pkg:START/!{ /:pkg:END/!d; }; }' README.md
+          sed -i '/:pkg:START/r table.md' README.md
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update ghcr packages list" || exit 0
+          git push
