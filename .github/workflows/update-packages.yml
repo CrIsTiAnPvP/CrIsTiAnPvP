@@ -27,16 +27,12 @@ jobs:
 
           gh api "user/packages?package_type=container&?visibility=public" --jq '.[] | "| [\(.name)](\(.html_url)) | [\(.repository.name // "Package Repo")](\(.repository.html_url)) | \(.updated_at | split("T")[0]) |"' >> table.md
           
-          echo "--- Tabla Generada ---"
-          cat table.md
-
-      - name: Insert table into README
-        run: |
+          echo "" >> table.md
+          
           sed -i 's/.*pkg:START.*//' README.md
           sed -i 's/.*pkg:END.*//' README.md
           sed -i '//,//{ //!{ //!d; }; }' README.md
           sed -i '//r table.md' README.md
-
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
