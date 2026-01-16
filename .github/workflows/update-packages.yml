@@ -25,7 +25,7 @@ jobs:
           echo "| Image Name | Repository | Last Updated |" >> table.md
           echo "| - | - | - |" >> table.md
 
-          gh api "user/packages?package_type=container&?visibility=public" --jq '.[] | "| \(.name) | [\(.repository.name // "Package Link")](\(.repository.html_url // .html_url)) | \(.updated_at | split("T")[0]) |"' >> table.md
+          gh api "user/packages?package_type=container&?visibility=public" --jq '.[] | "| [\(.name)](\(.html_url)) | [\(.repository.name // "Package Repo")](\(.repository.html_url)) | \(.updated_at | split("T")[0]) |"' >> table.md
           
           echo "--- Tabla Generada ---"
           cat table.md
