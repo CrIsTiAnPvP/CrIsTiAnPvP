@@ -24,6 +24,12 @@
 
 ## 📦 Container Registry (GHCR)
 
+[![GitHub Packages](https://img.shields.io/badge/GitHub%20Packages-ghcr.io-blue?style=flat-square&logo=github)](https://github.com/cristianpvp?tab=packages)
+
+| Image Name | Repository | Last Updated |
+| - | - | - |
+| [ftps](https://github.com/users/CrIsTiAnPvP/packages/container/package/ftps) | [FTP-Server](https://github.com/CrIsTiAnPvP/FTP-Server) | 2026-01-15 |
+
 ## 🚢 DevOps & Orchestration
 
 ![Docker](https://img.shields.io/badge/docker-%23040d24.svg?style=for-the-badge&logo=docker&logoColor=white)
