@@ -18,25 +18,14 @@ jobs:
           GH_TOKEN: ${{ secrets.GIT_TOKEN }}
         run: |
           echo "Autenticado como: $(gh api user --jq .login)"
-          
-          gh api graphql -f query='
-            query {
-              viewer {
-                packages(first: 10, packageType: DOCKER) {
-                  nodes {
-                    name
-                    repository {
-                      name
-                      url
-                    }
-                    latestVersion {
-                      updatedAt
-                    }
-                  }
-                }
-              }
-            }
-          ' --jq '.data.viewer.packages.nodes[] | "| \(.name) | [\(.repository.name // "Standalone")](\(.repository.url // "#")) | \(.latestVersion.updatedAt | split("T")[0]) |"' > table.md
+
+          echo "| Image Name | Repository | Last Updated |" > table.md
+          echo "| :--- | :--- | :--- |" >> table.md
+
+          gh api /user/packages \
+                      -f package_type=container \
+                      -f visibility=public \
+                      --jq '.[] | "| \(.name) | [\(.repository.name // "Package Link")](\(.repository.html_url // .html_url)) | \(.updated_at | split("T")[0]) |"' >> table.md
           
           echo "--- Tabla Generada ---"
           cat table.md
