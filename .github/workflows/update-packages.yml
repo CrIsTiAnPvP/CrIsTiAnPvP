@@ -32,11 +32,10 @@ jobs:
 
       - name: Insert table into README
         run: |
-          sed -i 's/:pkg:START//g' README.md
-          sed -i 's/:pkg:END//g' README.md
-          
-          sed -i '/pkg:START/,/pkg:END/{ /pkg:START/!{ /pkg:END/!d; }; }' README.md
-          sed -i '/pkg:START/r table.md' README.md
+          sed -i 's/.*pkg:START.*//' README.md
+          sed -i 's/.*pkg:END.*//' README.md
+          sed -i '//,//{ //!{ //!d; }; }' README.md
+          sed -i '//r table.md' README.md
 
       - name: Commit and Push
         run: |

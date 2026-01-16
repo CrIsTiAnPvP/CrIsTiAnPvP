@@ -26,12 +26,8 @@
 
 [![GitHub Packages](https://img.shields.io/badge/GitHub%20Packages-ghcr.io-blue?style=flat-square&logo=github)](https://github.com/cristianpvp?tab=packages)
 
-
-
-| Image Name | Repository | Last Updated |
-| - | - | - |
-| ftps | [FTP-Server](https://github.com/CrIsTiAnPvP/FTP-Server) | 2026-01-15 |
-
+:pkg:START
+:pkg:END
 
 ## 🚢 DevOps & Orchestration
 
