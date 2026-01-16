@@ -8,26 +8,19 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      packages: read
     
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Fetch Packages and Generate Table
+      - name: Fetch Packages from GHCR
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GHUB_TOKEN }}
         run: |
-          echo "| Image Name | Repository | Last Updated |" > table.md
-          echo "| :--- | :--- | :--- |" >> table.md
-          
-          gh api /user/packages \
+          gh api /users/CrIsTiAnPvP/packages \
             -f package_type=container \
-            --jq '.[] | "| \(.name) | [\(.repository.name // "N/A")](\(.repository.html_url // "#")) | \(.updated_at | split("T")[0]) |"' >> table.md
-          
-          echo "Tabla generada:"
+            --jq '.[] | "| \(.name) | [\(.repository.name // "N/A")](\(.repository.html_url // "#")) | \(.updated_at | split("T")[0]) |"' > table.md
+            
           cat table.md
 
       - name: Insert table into README
