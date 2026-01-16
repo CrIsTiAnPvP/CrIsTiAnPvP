@@ -22,17 +22,19 @@ jobs:
           GH_TOKEN: ${{ secrets.GIT_TOKEN }}
         run: |
           echo "" > table.md
+          echo "[![GitHub Packages](https://img.shields.io/badge/GitHub%20Packages-ghcr.io-blue?style=flat-square&logo=github)](https://github.com/cristianpvp?tab=packages)" >> table.md
+          echo "" >> table.md
           echo "| Image Name | Repository | Last Updated |" >> table.md
           echo "| - | - | - |" >> table.md
 
-          gh api "user/packages?package_type=container&?visibility=public" --jq '.[] | "| [\(.name)](\(.html_url)) | [\(.repository.name // "Package Repo")](\(.repository.html_url)) | \(.updated_at | split("T")[0]) |"' >> table.md
+          gh api "user/packages?package_type=container&visibility=public" --jq '.[] | "| [\(.name)](\(.html_url)) | [\(.repository.name // "Package Repo")](\(.repository.html_url)) | \(.updated_at | split("T")[0]) |"' >> table.md
           
           echo "" >> table.md
           
-          sed -i 's/.*pkg:START.*//' README.md
-          sed -i 's/.*pkg:END.*//' README.md
-          sed -i '//,//{ //!{ //!d; }; }' README.md
-          sed -i '//r table.md' README.md
+      - name: Insert table
+        run: |
+          sed -i '/## 📦 Container Registry (GHCR)/,/## 🚢 DevOps & Orchestration/{ /## 📦 Container Registry (GHCR)/!{ /## 🚢 DevOps & Orchestration/!d; }; }' README.md
+          sed -i '/## 📦 Container Registry (GHCR)/r table.md' README.md
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"

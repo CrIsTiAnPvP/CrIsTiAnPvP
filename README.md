@@ -24,11 +24,6 @@
 
 ## 📦 Container Registry (GHCR)
 
-[![GitHub Packages](https://img.shields.io/badge/GitHub%20Packages-ghcr.io-blue?style=flat-square&logo=github)](https://github.com/cristianpvp?tab=packages)
-
-:pkg:START
-:pkg:END
-
 ## 🚢 DevOps & Orchestration
 
 ![Docker](https://img.shields.io/badge/docker-%23040d24.svg?style=for-the-badge&logo=docker&logoColor=white)
