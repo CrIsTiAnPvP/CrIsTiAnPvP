@@ -17,10 +17,28 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GIT_TOKEN }}
         run: |
-          gh api /user/CrIsTiAnPvP/packages \
-            -f package_type=container \
-            --jq '.[] | "| \(.name) | [\(.repository.name // "N/A")](\(.repository.html_url // "#")) | \(.updated_at | split("T")[0]) |"' > table.md
-            
+          echo "Autenticado como: $(gh api user --jq .login)"
+          
+          gh api graphql -f query='
+            query {
+              viewer {
+                packages(first: 10, packageType: DOCKER) {
+                  nodes {
+                    name
+                    repository {
+                      name
+                      url
+                    }
+                    latestVersion {
+                      updatedAt
+                    }
+                  }
+                }
+              }
+            }
+          ' --jq '.data.viewer.packages.nodes[] | "| \(.name) | [\(.repository.name // "Standalone")](\(.repository.url // "#")) | \(.latestVersion.updatedAt | split("T")[0]) |"' > table.md
+          
+          echo "--- Tabla Generada ---"
           cat table.md
 
       - name: Insert table into README
