@@ -15,8 +15,16 @@ jobs:
 
       - name: Fetch Packages from GHCR
         env:
-          GH_TOKEN: ${{ secrets.GHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GIT_TOKEN }}
         run: |
+          # --- DEBUG: Comprobación de seguridad ---
+          if [ -z "$GH_TOKEN" ]; then
+            echo "🔴 La variable GH_TOKEN está vacía."
+            exit 1
+          else
+            echo "🟢 Token detectado correctamente."
+          fi
+          # ----------------------------------------
           gh api /users/CrIsTiAnPvP/packages \
             -f package_type=container \
             --jq '.[] | "| \(.name) | [\(.repository.name // "N/A")](\(.repository.html_url // "#")) | \(.updated_at | split("T")[0]) |"' > table.md
