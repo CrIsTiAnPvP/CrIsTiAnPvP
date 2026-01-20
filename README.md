@@ -7,20 +7,7 @@
 ![Profile views](https://komarev.com/ghpvc/?username=cristianpvp&label=Profile%20views&color=0e75b6&style=flat)
 [![Youtube Badge](https://img.shields.io/badge/-CrIsTiAnPvP-darkred?style=flat-square&logo=youtube&logoColor=white&link=https://www.youtube.com/c/cristianpvp)](https://youtube.com/c/CrIsTiAnPvPYT)
 
-- 🔭 I’m currently working on:
-
-| Project | Repository | Stars | Last Commit |
-| - | - | - | - |
-| ConfigRed | [ConfigRed](https://github.com/CrIsTiAnPvP/ConfigRed) | ![GitHub Repo stars](https://img.shields.io/github/stars/CrIsTiAnPvP/ConfigRed?style=flat-square&logo=githubsponsors) | ![GitHub last commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/ConfigRed?display_timestamp=committer&style=flat-square&logo=git) |
-| ODS-13_WebPage | [ODS-13_WebPage](https://github.com/CrIsTiAnPvP/ODS-13_WebPage) | ![GitHub Repo stars](https://img.shields.io/github/stars/CrIsTiAnPvP/ODS-13_WebPage?style=flat-square&logo=githubsponsors) | ![GitHub last commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/ODS-13_WebPage?display_timestamp=committer&style=flat-square&logo=git) |
-| Custom-Mobs | [Custom-Mobs](https://github.com/CrIsTiAnPvP/CustomMobs) | ![GitHub Repo stars](https://img.shields.io/github/stars/CrIsTiAnPvP/CustomMobs?style=flat-square&logo=githubsponsors) | ![GitHub last commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/CustomMobs?display_timestamp=committer&style=flat-square&logo=git) |
-| DNS-URL-Shortener | [DNS-URL-Shortener](https://github.com/CrIsTiAnPvP/DNS-URL-Shortener) | ![GitHub Repo stars](https://img.shields.io/github/stars/CrIsTiAnPvP/DNS-URL-Shortener?style=flat-square&logo=githubsponsors) | ![GitHub last commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/DNS-URL-Shortener?display_timestamp=committer&style=flat-square&logo=git) |
-
----
-
-- 🌱 I’m currently learning **Kubernetes & Docker**
-
----
+## 🧰 Recent Repos
 
 ## 📦 Container Registry (GHCR)
 

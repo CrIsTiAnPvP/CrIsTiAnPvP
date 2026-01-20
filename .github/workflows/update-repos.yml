@@ -1,0 +1,37 @@
+name: Update Repos
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Packages from GHCR
+        env:
+          GH_TOKEN: ${{ secrets.GIT_TOKEN }}
+        run: |
+          echo "" > repotable.md
+          echo "| Project | Repository | Stars | Last Commit |" >> repotable.md
+          echo "| - | - | - | - |" >> repotable.md
+
+          gh api "users/CrIsTiAnPvP/repos?sort=pushed&direction=desc&per_page=10" --jq 'map(select(.name != "CrIsTiAnPvP")) | .[0:4] | .[] | "| \(.name) | [\(.name)](\(.html_url)) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/\(.name)?style=flat-square&logo=githubsponsors) | ![Last Commit]((https://img.shields.io/github/last-commit/CrIsTiAnPvP/\(.name)?display_timestamp=committer&style=flat-square&logo=git)) |"' >> repotable.md
+          echo "" >> repotable.md
+          
+      - name: Insert table
+        run: |
+          sed -i '/## 🧰 Recent Repos/,/## 📦 Container Registry (GHCR)/{ /## 🧰 Recent Repos/!{ /## 📦 Container Registry (GHCR)/!d; }; }' README.md
+          sed -i '/## 🧰 Recent Repos/r repotable.md' README.md
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update recent repos table :toolbox:" || exit 0
+          git push
