@@ -11,10 +11,10 @@
 
 | Project | Repository | Stars | Last Commit |
 | - | - | - | - |
-| FTP-Server | [FTP-Server](https://github.com/CrIsTiAnPvP/FTP-Server) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/FTP-Server?style=flat-square&logo=githubsponsors) | ![Last Commit]((https://img.shields.io/github/last-commit/CrIsTiAnPvP/FTP-Server?display_timestamp=committer&style=flat-square&logo=git)) |
-| Python-Scripts | [Python-Scripts](https://github.com/CrIsTiAnPvP/Python-Scripts) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/Python-Scripts?style=flat-square&logo=githubsponsors) | ![Last Commit]((https://img.shields.io/github/last-commit/CrIsTiAnPvP/Python-Scripts?display_timestamp=committer&style=flat-square&logo=git)) |
-| ODS-13_WebPage | [ODS-13_WebPage](https://github.com/CrIsTiAnPvP/ODS-13_WebPage) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/ODS-13_WebPage?style=flat-square&logo=githubsponsors) | ![Last Commit]((https://img.shields.io/github/last-commit/CrIsTiAnPvP/ODS-13_WebPage?display_timestamp=committer&style=flat-square&logo=git)) |
-| DNS-URL-Shortener | [DNS-URL-Shortener](https://github.com/CrIsTiAnPvP/DNS-URL-Shortener) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/DNS-URL-Shortener?style=flat-square&logo=githubsponsors) | ![Last Commit]((https://img.shields.io/github/last-commit/CrIsTiAnPvP/DNS-URL-Shortener?display_timestamp=committer&style=flat-square&logo=git)) |
+| FTP-Server | [FTP-Server](https://github.com/CrIsTiAnPvP/FTP-Server) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/FTP-Server?style=flat-square&logo=githubsponsors) | ![Last Commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/FTP-Server?display_timestamp=committer&style=flat-square&logo=git) |
+| Python-Scripts | [Python-Scripts](https://github.com/CrIsTiAnPvP/Python-Scripts) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/Python-Scripts?style=flat-square&logo=githubsponsors) | ![Last Commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/Python-Scripts?display_timestamp=committer&style=flat-square&logo=git) |
+| ODS-13_WebPage | [ODS-13_WebPage](https://github.com/CrIsTiAnPvP/ODS-13_WebPage) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/ODS-13_WebPage?style=flat-square&logo=githubsponsors) | ![Last Commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/ODS-13_WebPage?display_timestamp=committer&style=flat-square&logo=git) |
+| DNS-URL-Shortener | [DNS-URL-Shortener](https://github.com/CrIsTiAnPvP/DNS-URL-Shortener) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/DNS-URL-Shortener?style=flat-square&logo=githubsponsors) | ![Last Commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/DNS-URL-Shortener?display_timestamp=committer&style=flat-square&logo=git) |
 
 ## 📦 Container Registry (GHCR)
 
