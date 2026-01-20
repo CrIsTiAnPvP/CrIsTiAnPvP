@@ -28,7 +28,7 @@
 
 | Image Name | Repository | Last Updated |
 | - | - | - |
-| [ftps](https://github.com/users/CrIsTiAnPvP/packages/container/package/ftps) | [FTP-Server](https://github.com/CrIsTiAnPvP/FTP-Server) | 2026-01-15 |
+| [ftps](https://github.com/users/CrIsTiAnPvP/packages/container/package/ftps) | [FTP-Server](https://github.com/CrIsTiAnPvP/FTP-Server) | 2026-01-19 |
 
 ## 🚢 DevOps & Orchestration
 
