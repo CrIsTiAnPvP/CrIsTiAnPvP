@@ -23,6 +23,9 @@
 | Image Name | Repository | Last Updated |
 | - | - | - |
 | [ftps](https://github.com/users/CrIsTiAnPvP/packages/container/package/ftps) | [FTP-Server](https://github.com/CrIsTiAnPvP/FTP-Server) | 2026-01-19 |
+| [mail-dns](https://github.com/users/CrIsTiAnPvP/packages/container/package/mail-dns) | [Mail-Server](https://github.com/CrIsTiAnPvP/Mail-Server) | 2026-01-22 |
+| [mail-dovecot](https://github.com/users/CrIsTiAnPvP/packages/container/package/mail-dovecot) | [Mail-Server](https://github.com/CrIsTiAnPvP/Mail-Server) | 2026-01-22 |
+| [mail-postfix](https://github.com/users/CrIsTiAnPvP/packages/container/package/mail-postfix) | [Mail-Server](https://github.com/CrIsTiAnPvP/Mail-Server) | 2026-01-22 |
 
 ## 🚢 DevOps & Orchestration
 
