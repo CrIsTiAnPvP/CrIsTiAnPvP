@@ -11,10 +11,10 @@
 
 | Project | Repository | Stars | Last Commit |
 | - | - | - | - |
+| Animal-Crossing-Finder | [Animal-Crossing-Finder](https://github.com/CrIsTiAnPvP/Animal-Crossing-Finder) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/Animal-Crossing-Finder?style=flat-square&logo=githubsponsors) | ![Last Commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/Animal-Crossing-Finder?display_timestamp=committer&style=flat-square&logo=git) |
 | SaldoAndalucia-app | [SaldoAndalucia-app](https://github.com/CrIsTiAnPvP/SaldoAndalucia-app) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/SaldoAndalucia-app?style=flat-square&logo=githubsponsors) | ![Last Commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/SaldoAndalucia-app?display_timestamp=committer&style=flat-square&logo=git) |
 | Docker-Enterprise-Stack | [Docker-Enterprise-Stack](https://github.com/CrIsTiAnPvP/Docker-Enterprise-Stack) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/Docker-Enterprise-Stack?style=flat-square&logo=githubsponsors) | ![Last Commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/Docker-Enterprise-Stack?display_timestamp=committer&style=flat-square&logo=git) |
 | ShodanLookup | [ShodanLookup](https://github.com/CrIsTiAnPvP/ShodanLookup) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/ShodanLookup?style=flat-square&logo=githubsponsors) | ![Last Commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/ShodanLookup?display_timestamp=committer&style=flat-square&logo=git) |
-| FTP-Server | [FTP-Server](https://github.com/CrIsTiAnPvP/FTP-Server) | ![Stars](https://img.shields.io/github/stars/CrIsTiAnPvP/FTP-Server?style=flat-square&logo=githubsponsors) | ![Last Commit](https://img.shields.io/github/last-commit/CrIsTiAnPvP/FTP-Server?display_timestamp=committer&style=flat-square&logo=git) |
 
 ## 📦 Container Registry (GHCR)
 
